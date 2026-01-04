@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: calculator-java
-      image: 772317732952.dkr.ecr.us-east-1.amazonaws.com/calculator-java:IMAGE_TAG
+      image: 772317732952.dkr.ecr.us-east-1.amazonaws.com/calculator-java:${VERSION}
       imagePullPolicy: Always
       ports:
         - containerPort: 8080
