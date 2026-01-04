@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: calculator-java
+  labels:
+    app: calculator-java
+spec:
+  containers:
+    - name: calculator-java
+      image: 772317732952.dkr.ecr.us-east-1.amazonaws.com/calculator-java:IMAGE_TAG
+      imagePullPolicy: Always
+      ports:
+        - containerPort: 8080
